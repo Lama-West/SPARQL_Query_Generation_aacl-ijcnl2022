@@ -1,1 +1,1 @@
-# SPARQL_Query_Generation_aacl-ijcnl2022
+# SPARQL Query Generation - aacl-ijcnl2022
