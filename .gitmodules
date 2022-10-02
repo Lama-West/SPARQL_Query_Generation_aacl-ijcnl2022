@@ -1,0 +1,12 @@
+[submodule "Data/data_sources/tntspa"]
+	path = Data/data_sources/tntspa
+	url = https://github.com/xiaoyuin/tntspa
+[submodule "Data/data_sources/DBNQA"]
+	path = Data/data_sources/DBNQA
+	url = https://github.com/AKSW/DBNQA.git
+[submodule "Data/data_sources/LC-QuAD"]
+	path = Data/data_sources/LC-QuAD
+	url = https://github.com/AskNowQA/LC-QuAD
+[submodule "Data/data_sources/NSpM"]
+	path = Data/data_sources/NSpM
+	url = https://github.com/LiberAI/NSpM.git

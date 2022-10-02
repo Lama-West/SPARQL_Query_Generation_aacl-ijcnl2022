@@ -1,0 +1,82 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Monument",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/monument/build_dataset.py",
+            "cwd": "${workspaceRoot}",
+            "envFile": "${workspaceFolder}/env_files/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Monument80",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/monument/build_dataset.py",
+            "args": ["--nl", "raw_data/Monument/80/data.en", "--sparql", "raw_data/Monument/80/data.sparql", "--out_dir", "out_data/Monument/80"],
+            "cwd": "${workspaceRoot}",
+            "envFile": "${workspaceFolder}/env_files/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Monument50",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/monument/build_dataset.py",
+            "args": ["--nl", "raw_data/Monument/50/data.en", "--sparql", "raw_data/Monument/50/data.sparql", "--out_dir","out_data/Monument/50"],
+            "cwd": "${workspaceRoot}",
+            "envFile": "${workspaceFolder}/env_files/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "LC-QuAD",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/lcquad/build_dataset.py",
+            "args": ["--dbr"],
+            "cwd": "${workspaceRoot}",
+            "envFile": "${workspaceFolder}/env_files/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "DBNQA",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/DBNQA/build_dataset.py",
+            "cwd": "${workspaceRoot}",
+            "envFile": "${workspaceFolder}/env_files/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Error report",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/common/error_report_to_accuracy.py",
+            "cwd": "${workspaceRoot}",
+            "envFile": "${workspaceFolder}/env_files/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "OOV LCQUAD",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/common/lcquad_generate_oov.py",
+            "cwd": "${workspaceRoot}",
+            "envFile": "${workspaceFolder}/env_files/.env",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}

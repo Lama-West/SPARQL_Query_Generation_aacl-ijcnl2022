@@ -1,0 +1,18 @@
+{ "head": { "link": [], "vars": ["domain"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/GraveMonument" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/Memorial" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/ConcentrationCamp" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/SiteOfSpecialScientificInterest" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/WineRegion" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/Garden" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/PopulatedPlace" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/WorldHeritageSite" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/CelestialBody" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/NaturalPlace" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/HistoricPlace" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/Park" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/ProtectedArea" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/Cemetery" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/CountrySeat" }},
+    { "domain": { "type": "uri", "value": "http://dbpedia.org/ontology/Mine" }} ] } }

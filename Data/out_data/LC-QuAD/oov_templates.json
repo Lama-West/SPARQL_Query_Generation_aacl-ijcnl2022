@@ -1,0 +1,248 @@
+[
+    {
+        "id": 1, 
+        "n_entities": 1,
+        "question_template": "what are the <0|domain> whose <1|property> is <2|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE {?uri <1> <2> } ",
+        "type": "vanilla"
+    }, 
+    {
+        "id": 301, 
+        "n_entities": 1, 
+        "question_template": "what is the <0|domain> whose <1|property> is <2|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE {?uri <1> <2> . ?uri rdf:type <0> } ", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 2, 
+        "n_entities": 1, 
+        "question_template": "what is the <1|property> of <2|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { <2> <1> ?uri } ", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 303,
+        "n_entities": 1, 
+        "question_template": "what is the <1|range> of the <0|domain> which is the <2|property> of <3|range:resource> ?",
+        "template": "SELECT DISTINCT ?uri WHERE { <3> <2> ?x . ?x <1> ?uri . ?x rdf:type <0> }",
+        "type": "vanilla"
+    }, 
+    {
+        "id": 3,
+        "n_entities": 1, 
+        "question_template": "what is the <1|range> of the <0|domain> who is the <2|property> of <3|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { <3> <2> ?x . ?x <1> ?uri } ", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 5, 
+        "n_entities": 1, 
+        "question_template": "what is the <1|range> of the <0|domain> whose <2|property> is <3|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { ?x <2> <3> . ?x <1> ?uri } ", 
+        "type": "vanilla"
+    },
+    {
+        "id": 305, 
+        "n_entities": 1, 
+        "question_template": "what is the <1|range> of the <0|domain> whose <2|property> is <3|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { ?x <2> <3> . ?x <1> ?uri . ?x rdf:type <0> } ",
+        "type": "vanilla"
+    },
+    {
+        "id": 6, 
+        "n_entities": 1,
+        "question_template": "what are the <0|domain> whose <1|domain> 's <2|property> is <3|range:resource> ?",
+        "template": "SELECT DISTINCT ?uri WHERE { ?x <2> <3> . ?uri <1> ?x } ", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 306, 
+        "n_entities": 1, 
+        "question_template": "what are the <0|domain> whose <1|domain> 's <2|property> is <3|range:resource> ?",
+        "template": "SELECT DISTINCT ?uri WHERE { ?x <2> <3> . ?uri <1> ?x . ?uri rdf:type <0> }", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 7, 
+        "n_entities": 2, 
+        "question_template": "what are the <0|domain> whose <1|property> are <2|range:resource> and <3|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { ?uri <1> <2> . ?uri <1> <3> } ",
+
+        "type": "vanilla"
+    }, 
+    {
+        "id": 307, 
+        "n_entities": 2, 
+        "question_template": "what are the <0|domain> whose <1|property> are <2|range:resource> and <3|range:resource> ? ?",
+        "template": " SELECT DISTINCT ?uri WHERE { ?uri <1> <2> . ?uri <1> <3> . ?uri rdf:type <0> } ",
+        "type": "vanilla"
+    }, 
+    {
+        "id": 8, 
+        "n_entities": 2, 
+        "question_template": "what is the <0|domain> whose <1|property_1> is <2|range_1:resource> and <3|property_2> is <4|range_2:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE {?uri <1> <2> . ?uri <3> <4> } ", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 308, 
+        "n_entities": 2, 
+        "question_template": "what is the <0|domain> whose <1|property_1> is <2|range_1:resource> and <3|property_2> is <4|range_2:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE {?uri <1> <2> . ?uri <3> <4> . ?uri rdf:type <0> }", 
+        "type": "vanilla"
+    },
+    {
+        "id": 9, 
+        "n_entities": 1, 
+        "question_template": "what is <1|property_2> of the <0|domain> who is the <2|property_1> of <3|range_1:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { <3> <2> ?x . ?x <1> ?uri }", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 11,
+        "n_entities": 1, 
+        "question_template": "list the other <1|property> of the <0|domain> whose <2|property> is <3|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { ?x <2> <3> . ?x <1> ?uri . }", 
+        "type": "vanilla"
+    },
+    {
+        "id": 311, 
+        "n_entities": 1, 
+        "question_template": "list the other <1|property> of the <0|domain> whose <2|property> is <3|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { ?x <2> <3> . ?x <1> ?uri . ?x rdf:type <0> }", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 15, 
+        "n_entities": 2, 
+        "question_template": "what is the <1|property> of the <2|range:resource> and <3|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { <2> <1> ?uri. <3> <1> ?uri }", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 315, 
+        "n_entities": 2, 
+        "question_template": "what is the <1|property> of the <2|range:resource> and <3|range:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { <2> <1> ?uri. <3> <1> ?uri . ?uri rdf:type <0|domain> }", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 16, 
+        "n_entities": 2, 
+        "question_template": "who is the <1|property_1> of the <2|range_1:resource> and <3|property_2> of the <4|range_2:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { <2> <1> ?uri. <4> <3> ?uri }", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 316, 
+        "n_entities": 2, 
+        "question_template": "who is the <1|property_1> of the <2|range_1:resource> and <3|property_2> of the <4|range_2:resource> ?",
+        "template": " SELECT DISTINCT ?uri WHERE { <2> <1> ?uri. <4> <3> ?uri . ?uri rdf:type <0|domain> }", 
+        "type": "vanilla"
+    }, 
+    {
+        "id": 101, 
+        "n_entities": 1, 
+        "question_template": "how many <0|domain> are there whose <1|property> is <2|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE {?uri <1> <2> . } ", 
+        "type": "count"
+    }, 
+    {
+        "id": 401, 
+        "n_entities": 1, 
+        "question_template": "how many <0|domain> are there whose <1|property> is <2|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE {?uri <1> <2> . ?uri rdf:type <0> } ", 
+        "type": "count"
+    }, 
+    {
+        "id": 102, 
+        "n_entities": 1, 
+        "question_template": "how many <1|property> are there in <2|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE { <2> <1> ?uri }", 
+        "type": "count"
+    }, 
+    {
+        "id": 402, 
+        "n_entities": 1, 
+        "question_template": "how many <1|property> are there in <2|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE { <2> <1> ?uri . ?uri rdf:type <0|domain> }", 
+        "type": "count"
+    }, 
+    {
+        "id": 103, 
+        "n_entities": 1, 
+        "question_template": "how many <1|property> are there of the <0|domain> which is the <2|property> of <3|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE { <3> <2> ?x . ?x <1> ?uri }", 
+        "type": "count"
+    }, 
+    {
+        "id": 403, 
+        "n_entities": 1, 
+        "question_template": "how many <1|property> are there of the <0|domain> which is the <2|property> of <3|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE { <3> <2> ?x . ?x  <1> ?uri . ?x rdf:type <0> }", 
+        "type": "count"
+    }, 
+    {
+        "id": 105, 
+        "n_entities": 1, 
+        "question_template": "what is the total number of <1|property> of the <0|domain> whose <2|property> is <3|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE { ?x <2> <3> . ?x <1> ?uri }", 
+        "type": "count"
+    }, 
+    {
+        "id": 405, 
+        "n_entities": 1, 
+        "question_template": "what is the total number of <1|property> of the <0|domain> whose <2|property> is <3|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE { ?x <2> <3> . ?x <1> ?uri . ?uri rdf:type <0> }", 
+        "type": "count"
+    }, 
+    {
+        "id": 106, 
+        "n_entities": 1, 
+        "question_template": "what is the total number of <0|domain> whose <1|property> 's <2|property> is <3|range:resource> ?",
+        "template": "SELECT DISTINCT COUNT(?uri) WHERE { ?x <2> <3> . ?uri <1> ?x } ",
+        "type": "count"
+    }, 
+    {
+        "id": 406, 
+        "n_entities": 1, 
+        "question_template": "what is the total number of <0|domain> whose <1|property> 's <2|property> is <3|range:resource> ?",
+        "template": "SELECT DISTINCT COUNT(?uri) WHERE { ?x <2> <3> . ?uri <1> ?x . ?uri rdf:type <0> } ",
+        "type": "count"
+    }, 
+    {
+        "id": 107, 
+        "n_entities": 2, 
+        "question_template": "what is the number of <0|domain> whose <1|property> are <2|range:resource> and <3|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE { ?uri <1> <2> . ?uri <1> <3>} ", 
+        "type": "count"
+    }, 
+    {
+        "id": 108, 
+        "n_entities": 2, 
+        "question_template": "what is the total number of <0|domain> whose <1|property_1> is <2|range_1:resource> and <3|property_2> is <4|range_2:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE {?uri <1> <2> . ?uri <3> <4> } ", 
+        "type": "count"
+    }, 
+    {
+        "id": 111, 
+        "n_entities": 1, 
+        "question_template": "what is the total number of other <1|property> of the <0|domain> whose <2|property> is <3|range:resource> ?",
+        "template": " SELECT DISTINCT COUNT(?uri) WHERE { ?x <1> <3> . ?x <2> ?uri }", 
+        "type": "count"
+    },
+    {
+        "id": 151, 
+        "n_entities": 1, 
+        "question_template": "is <1|range:resource> the <2|property> of <3|domain:resource> ?",
+        "template": "ASK WHERE { <3> <2> <1> }", 
+        "type": "ask"
+    }, 
+    {
+        "id": 152, 
+        "n_entities": 1, 
+        "question_template": "is <1|range:resource> the <2|property> of <3|domain:resource> ?",
+        "template": "ASK WHERE { <3> <2> <1> }", 
+        "type": "ask"
+    }
+]
