@@ -8,3 +8,5 @@ Code related to our AACL-IJCNLP 2022 submission
 If you use our work, please cite the following paper: 
 
 Rose Hirigoyen, Amal Zouaq, and Samuel Reyd. 2022. A Copy Mechanism for Handling Knowledge Base Elements in SPARQL Neural Machine Translation. In Findings of the Association for Computational Linguistics: AACL-IJCNLP 2022, pages 226–236, Online only. Association for Computational Linguistics.
+
+Check our presentation at: http://www.labowest.ca/conferences/AACL2022/Hirigoyen_et_al_AACL-IJCNLP2022.mp4
